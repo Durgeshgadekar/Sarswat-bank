@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswat Bank - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="saraswatlogo2.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            
+            background-color: #800000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #671515;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: url(banner3.jpg) no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .service-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #800000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+                /* Media Query for Tablets (max-width: 768px) */
+                @media screen and (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                width: 60%;
+            }
+        }
+
+        /* Media Query for Mobile Devices (max-width: 480px) */
+        @media screen and (max-width: 480px) {
+            .banner {
+                width: 100%;
+                height: 171px;
+            }
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+            .services {
+                display: flex;
+                padding: 0px;
+
+            }
+            nav {
+                padding: 1px;
+            }
+            header{
+                padding: 1px;
+            }
+            footer{
+                padding: 1px;
+            }
+            .service-item {
+                   background-color: white;
+                   border-radius: 10px;
+                   padding: 9px;
+                   width: 100%;
+                   text-align: center;
+                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <h1>Saraswat Bank</h1>
+    </header>
+
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="aboutus.html">Services</a>
+        <a href="aboutus.html">Contact</a>
+        <a href="loginpage.html">Login</a>
+    </nav>
+
+    <div class="banner">
+        <!-- <h2>Your Trusted Banking Partner</h2> -->
+    </div>
+
+    <section class="services">
+        <div class="service-item">
+           <a href="personalbanking.html"><h3>Personal Banking</h3></a> 
+            <p>We offer a wide range of personal banking services tailored to meet your financial needs.</p>
+        </div>
+        <div class="service-item">
+            <a href="loanpage.html"><h3>Loans</h3></a>
+            <p>Get quick and easy loans at attractive interest rates for all your personal and business needs.</p>
+        </div>
+        <div class="service-item">
+            <a href="digitalbanking.html"><h3>Digital Banking</h3></a>
+            <p>Experience seamless digital banking services with our secure and easy-to-use platform.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saraswat Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
